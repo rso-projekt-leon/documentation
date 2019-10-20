@@ -1,6 +1,18 @@
-# documentation
-Documentation for the project APIs.
+# Data Analysis Platform
+
+## Primeri uporabe
+- Shranjevanje podatkov (dataseti) v oblačni storitvi za različne uporabnike.
+- Osnovni povzetek analize za prenesene datasete.
+- Možnost natančnejše analize z enostavnim vmesnikom.
+
+## Microservices
+
+### data-catalog
+
+### data-upload
 
 
-## CI/CD
-Jenkis installed on localhost:8080
+## Documentation
+Documentation for the specific microservice:
+- data-upload
+- data-catalog
