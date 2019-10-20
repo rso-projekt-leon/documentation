@@ -18,5 +18,5 @@
 
 ### Priprava slik Docker
 - [ ] Mikrostoritvam, ki ste jih začeli implementirati v prvi nalogi, dodajte definicijo za gradnjo slik Docker – datoteko Dockerfile. Datoteka naj se nahaja v repozitoriju posamezne mikrostoritve. Pri definiciji datoteke uporabite ustrezno izvorno sliko, v vašo sliko pa zapakirajte samo najnujnejše artefakte, potrebne za izvajanje mikrostoritve. 
-- [] Slike objavite na portalu Docker Hub.
+- [ ] Slike objavite na portalu Docker Hub.
 
