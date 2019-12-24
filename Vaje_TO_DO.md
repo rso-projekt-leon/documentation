@@ -5,7 +5,7 @@
 - [ ] Pripravite osnutek mikrostoritev, ki jih boste implementirali, in predvidenih povezav med njimi. Upoštevajte, da so za različne povezave lahko primerni različni tipi komunikacije. Razmislite o storitvah, ki jih mora ponujati vaša aplikacija.
 - [x] Pripravite si razvojno okolje. 
 - [x] Kreirajte organizacijo in repozitorije na GutHub-u.
-- [ ] Implementirajte vsaj dve osnovni mikrostoritvi, ki komunicirata med sabo.
+- [x] Implementirajte vsaj dve osnovni mikrostoritvi, ki komunicirata med sabo.
 
 ## Vaja 2:
 ### Zasnova arhitekture
@@ -13,87 +13,87 @@
     - [ ] shemo mikrostoritev in njihovih interakcij in
     - [ ] primere sporočil in zahtevkov, ki jih bo obdelovala aplikacija.
 - [ ] Identificirajte nekaj kompleksnejših zahtevkov, pri obdelavi katerih bodo sodelovale vsaj tri mikrostoritve.
-- [ ] Zasnovano arhitekturo predstavite asistentu na vajah in objavite v enega izmed repozitorijev. Priporočena je uporaba ločenega repozitorija za dokumentacijo.
-- [ ] Zasnovana arhitektura predstavlja prvo iteracijo in jo bomo skozi semester še izpopolnjevali in dopolnjevali.
+- [x] Zasnovano arhitekturo predstavite asistentu na vajah in objavite v enega izmed repozitorijev. Priporočena je uporaba ločenega repozitorija za dokumentacijo.
+- [x] Zasnovana arhitektura predstavlja prvo iteracijo in jo bomo skozi semester še izpopolnjevali in dopolnjevali.
 
 ### Priprava slik Docker
-- [ ] Mikrostoritvam, ki ste jih začeli implementirati v prvi nalogi, dodajte definicijo za gradnjo slik Docker – datoteko Dockerfile. Datoteka naj se nahaja v repozitoriju posamezne mikrostoritve. Pri definiciji datoteke uporabite ustrezno izvorno sliko, v vašo sliko pa zapakirajte samo najnujnejše artefakte, potrebne za izvajanje mikrostoritve. 
-- [ ] Slike objavite na portalu Docker Hub.
+- [x] Mikrostoritvam, ki ste jih začeli implementirati v prvi nalogi, dodajte definicijo za gradnjo slik Docker – datoteko Dockerfile. Datoteka naj se nahaja v repozitoriju posamezne mikrostoritve. Pri definiciji datoteke uporabite ustrezno izvorno sliko, v vašo sliko pa zapakirajte samo najnujnejše artefakte, potrebne za izvajanje mikrostoritve. 
+- [x] Slike objavite na portalu Docker Hub.
 
 ## Vaja 3:
 ### Vzpostavitev zvezne integracije
 Z uporabo Travis CI (ali druge storitve po vaši izbiri) vzpostavite cikel zvezne integracije, ki naj:
-- [ ] vse spremembe iz GitHub veje master prevede in zapakira (build),
+- [x] vse spremembe iz GitHub veje master prevede in zapakira (build),
 - [ ] izvede teste enot (unit testing) – teste bomo dodali v nadaljevanju semestra,
-- [ ] ustvari novo sliko Docker,
-- [ ] objavi sliko na portalu Docker Hub.
+- [x] ustvari novo sliko Docker,
+- [x] objavi sliko na portalu Docker Hub.
 
 Zvezna integracija vam mora delovati skozi celoten semester na vseh repozitorijih in je ena izmed osnovnih zahtev za uspešno opravljene vaje.
 
 ### Upravljanje s konfiguracijo
 Seznanite se z naslednjimi koncepti upravljanja konfiguracije, ki jih bomo uporabljali v nadaljevanju semestra (ter preverjali na zagovorih, kolokvijih in izpitih):
-- [ ] Konfiguracija mikrostoritev z uporabo okoljskih spremenljivk.
-    - [ ] Kdaj uporabimo ta način konfiguracije?
-    - [ ] Kakšna je podpora s strani izbranega mikrostoritvenega ogrodja? Zakaj je pomembna?
-    - [ ] Kakšna je prioriteta okoljskih spremenljivk v izbranem mikrostoritvenem ogrodju in zakaj?
-- [ ] Definiranje okoljskih spremenljivk ob zagonu vsebnikov Docker.
-    - [ ] Preučite in testiranje načine definiranja okoljskih spremenljivk v okolju Docker.
-    - [ ] Vaše mikrostoritve zaženite v okolju Docker in pri tem konfiguracijske vrednosti, specifične za zagon v določenem okolju (npr. konfiguracija povezave na bazo), definirajte z uporabo okoljskih spremenljivk.
+- [x] Konfiguracija mikrostoritev z uporabo okoljskih spremenljivk.
+    - [x] Kdaj uporabimo ta način konfiguracije?
+    - [x] Kakšna je podpora s strani izbranega mikrostoritvenega ogrodja? Zakaj je pomembna?
+    - [X] Kakšna je prioriteta okoljskih spremenljivk v izbranem mikrostoritvenem ogrodju in zakaj?
+- [x] Definiranje okoljskih spremenljivk ob zagonu vsebnikov Docker.
+    - [x] Preučite in testiranje načine definiranja okoljskih spremenljivk v okolju Docker.
+    - [x] Vaše mikrostoritve zaženite v okolju Docker in pri tem konfiguracijske vrednosti, specifične za zagon v določenem okolju (npr. konfiguracija povezave na bazo), definirajte z uporabo okoljskih spremenljivk.
 
 
 Pripravite načrt upravljanja s konfiguracijo v vaši aplikaciji. Pri tem:
 - [ ] identificirajte vso konfiguracijo vaše aplikacije,
-- [ ] ločite implementacijo in konfiguracijo – konfiguracijo naj bo mogoče spreminjati brez ponovnega prevajanja in nameščanja mikrostoritve,
-- [ ] predvidite uporabo različnih virov konfiguracije, npr. konfiguracijske datoteke, okoljske spremenljivke, konfiguracijski strežnik...,
-- [ ] na smiselnem primeru podprite dinamično rekonfiguracijo storitve, npr. z uporabo konfiguracijskega strežnika.
-- [ ] V ogrodju KumuluzEE lahko uporabite razširitev KumuluzEE Config.
+- [x] ločite implementacijo in konfiguracijo – konfiguracijo naj bo mogoče spreminjati brez ponovnega prevajanja in nameščanja mikrostoritve,
+- [x] predvidite uporabo različnih virov konfiguracije, npr. konfiguracijske datoteke, okoljske spremenljivke, konfiguracijski strežnik...,
+- [x] na smiselnem primeru podprite dinamično rekonfiguracijo storitve, npr. z uporabo konfiguracijskega strežnika.
+- [x] V ogrodju KumuluzEE lahko uporabite razširitev KumuluzEE Config.
 
 ## Vaja 4:
 ### Odkrivanje storitev
 Odkrivanje storitev v okolju Docker.
 
-- [ ] V primeru zagona mikrostoritve in pripadajoče podatkovne baze kot dveh vsebnikov Docker je potrebno v mikrostoritvi določiti naslov vsebnika s podatkovno bazo. Zaradi dinamične narave okolja Docker ne uporabimo IP naslova vsebnika, temveč vgrajen mehanizem za odkrivanje vsebnikov.
+- [x] V primeru zagona mikrostoritve in pripadajoče podatkovne baze kot dveh vsebnikov Docker je potrebno v mikrostoritvi določiti naslov vsebnika s podatkovno bazo. Zaradi dinamične narave okolja Docker ne uporabimo IP naslova vsebnika, temveč vgrajen mehanizem za odkrivanje vsebnikov.
 - Preučite in preizkusite
-    - [ ] odkrivanje vsebnikov z uporabo koncepta Docker network (npr. docker network ls) in imenom vsebnika ter
-    - [ ] odkrivanje vsebnikov znotraj namestitve Docker compose (primer).
+    - [x] odkrivanje vsebnikov z uporabo koncepta Docker network (npr. docker network ls) in imenom vsebnika ter
+    - [x] odkrivanje vsebnikov znotraj namestitve Docker compose (primer).
 
 
 Zasnova in implementacija odkrivanja storitev v vaši aplikaciji.
-- [ ] Zasnujte odkrivanje storitev v vaši aplikaciji. Posodobite implementacijo vaših obstoječih mikrostoritev tako, da bodo vsi klici med posameznimi mikrostoritvami implementirani s pomočjo odkrivanja storitev. Statično kodiranje povezav med mikrostoritvami ni sprejemljivo.
-- [ ] Posameznim storitvam določite imena, ki jih bomo uporabljali za odkrivanje storitev. Odkrivanje storitev bomo vzpostavili ob namestitvi mikrostoritev na Kubernetes, ki uporablja podobne koncepte kot Docker.
+- [x] Zasnujte odkrivanje storitev v vaši aplikaciji. Posodobite implementacijo vaših obstoječih mikrostoritev tako, da bodo vsi klici med posameznimi mikrostoritvami implementirani s pomočjo odkrivanja storitev. Statično kodiranje povezav med mikrostoritvami ni sprejemljivo.
+- [x] Posameznim storitvam določite imena, ki jih bomo uporabljali za odkrivanje storitev. Odkrivanje storitev bomo vzpostavili ob namestitvi mikrostoritev na Kubernetes, ki uporablja podobne koncepte kot Docker.
 
 ### Kubernetes
-- [ ] Ustvarite si račun pri poljubnem ponudniku oblačnih storitev. Izberite ponudnika, ki ponuja že nameščeno okolje Kubernetes. Nekaj možnih ponudnikov:
-    - [ ] Azure (Azure for Education).
-        - R[ ] egistracija brez kreditne kartice, 100 € kreditov.
-    - [ ] Google Cloud Platform
-        - [ ] Pri registraciji je zahtevana kreditna kartica, 300 € kreditov, možno kreirati več trial računov enega za drugim.
-    - [ ] OpenShift
-    -    [ ] Registracija brez kreditne kartice
-    - [ ] Uporabite lahko tudi npr. DigitalOcean, AWS, IBM Cloud ...
-- [ ] Po kreiranju računa, vam ponudniki tipično ponudijo orodja in niz ukazov, s katerimi si lokalno skonfiguriramo orodje kubectl.
-- [ ] Ustvarite namestitvene datoteke za vaše namestitve in storitve. Dodajte jih v git repozitorij k pripadajoči storitvi.
-- [ ] Pri namestitvah uporabite docker slike, ki vam jih CI cikel objavlja v repozirotiju.
-- [ ] Ustrezno konfigurirajte Kubernetes storitve (services). Prikažite uporabo različnih tipov storitev (npr. ClusterID, NodePort, ...). Nekaj vaših storitev naj bo začasno dostopnih na javnem IP naslovu. V naslednjih tednih jih bomo izpostavili skozi ingress proxy.
-- [ ] Ustrezno implementirajte odkrivanje storitev.
-- [ ] Za zunanje storitve, npr. podatkovne baze, lahko uporabite storitve, ki jih ponuja izbrani ponudnik računalništva v oblaku.
+- [x] Ustvarite si račun pri poljubnem ponudniku oblačnih storitev. Izberite ponudnika, ki ponuja že nameščeno okolje Kubernetes. Nekaj možnih ponudnikov:
+    - [x] Azure (Azure for Education).
+        - [x] egistracija brez kreditne kartice, 100 € kreditov.
+    - [x] Google Cloud Platform
+        - [x] Pri registraciji je zahtevana kreditna kartica, 300 € kreditov, možno kreirati več trial računov enega za drugim.
+    - [x] OpenShift
+    -    [x] Registracija brez kreditne kartice
+    - [x] Uporabite lahko tudi npr. DigitalOcean, AWS, IBM Cloud ...
+- [x] Po kreiranju računa, vam ponudniki tipično ponudijo orodja in niz ukazov, s katerimi si lokalno skonfiguriramo orodje kubectl.
+- [x] Ustvarite namestitvene datoteke za vaše namestitve in storitve. Dodajte jih v git repozitorij k pripadajoči storitvi.
+- [x] Pri namestitvah uporabite docker slike, ki vam jih CI cikel objavlja v repozirotiju.
+- [x] Ustrezno konfigurirajte Kubernetes storitve (services). Prikažite uporabo različnih tipov storitev (npr. ClusterID, NodePort, ...). Nekaj vaših storitev naj bo začasno dostopnih na javnem IP naslovu. V naslednjih tednih jih bomo izpostavili skozi ingress proxy.
+- [x] Ustrezno implementirajte odkrivanje storitev.
+- [x] Za zunanje storitve, npr. podatkovne baze, lahko uporabite storitve, ki jih ponuja izbrani ponudnik računalništva v oblaku.
 
 ## Vaja 5:
 ### Ingress
-- [ ] Konfigurirajte ingress proxy, tako da bodo vse vaše mikrostoritve javno dostopne preko enega naslova.
-- [ ] Uporabite lahko ingress, ki je nameščen na vašem oblaku, ali pa namestite poljuben ingress controler, npr. NGINX Ingress Controller
+- [x] Konfigurirajte ingress proxy, tako da bodo vse vaše mikrostoritve javno dostopne preko enega naslova.
+- [x] Uporabite lahko ingress, ki je nameščen na vašem oblaku, ali pa namestite poljuben ingress controler, npr. NGINX Ingress Controller
 
 ### API za preverjanje vitalnosti in Kubernetes Liveness Probes
-- [ ] V vaše storitve dodajte API za preverjanje vitalnosti.
-- [ ] Uporabite lahko KumuluzEE Health.
-- [ ] Implementirajte vsaj dve kontroli zdravja.
-- [ ] API za preverjanje zdravja naj vrača ustreze HTTP status kode, da bo skladen s Kubernetes Liveness Probes.
-- [ ] V namestitvene datoteke Kubernetes za namestitve (deployments) dodajte Liveness Probes in Readiness Probes
-- [ ] Simulirajte bolno storitev (npr. z dinamično konfiguracijo ali POST zahtevkom) in opazujte, ali jo Kubernetes na novo zažene.
+- [x] V vaše storitve dodajte API za preverjanje vitalnosti.
+- [x] Uporabite lahko KumuluzEE Health.
+- [x] Implementirajte vsaj dve kontroli zdravja.
+- [x] API za preverjanje zdravja naj vrača ustreze HTTP status kode, da bo skladen s Kubernetes Liveness Probes.
+- [x] V namestitvene datoteke Kubernetes za namestitve (deployments) dodajte Liveness Probes in Readiness Probes
+- [x] Simulirajte bolno storitev (npr. z dinamično konfiguracijo ali POST zahtevkom) in opazujte, ali jo Kubernetes na novo zažene.
 
 ### Zbiranje metrik
-- [ ] Storitvam dodajte končno točko, na kateri izpostavite nekaj metrik.
-- [ ] Uporabite lahko KumuluzEE Metrics.
+- [x] Storitvam dodajte končno točko, na kateri izpostavite nekaj metrik.
+- [x] Uporabite lahko KumuluzEE Metrics.
 
 ## Vaja 6:
 ### Kubernetes in dnevniške datoteke
@@ -118,7 +118,7 @@ Zasnova in implementacija odkrivanja storitev v vaši aplikaciji.
 - [ ] Cilj te naloge je omejiti širjenje vpliva napak posamezne mikrostoritve na celotno aplikacijo.
 - [ ] Pri implementaciji odpornosti na napake si lahko pomagate z razširitvijo KumuluzEE Fault Tolerance.
 - [ ] Pripravite ustrezen nadomestni mehanizem (fallback), ki se bo prožil v primeru napake na klicani mikrostoritvi.
-- [ ] ri implementaciji odpornosti na napake lahko uporabite časovnik (timeout).
+- [ ] Pri implementaciji odpornosti na napake lahko uporabite časovnik (timeout).
 - [ ] Uporabite prekinjevalec toka (circuit breaker). Pripravite demo, v katerem prikažete različna stanja prekinjevalca toka (odprto, pol-odprto, zaprto).
 - [ ] Ponovno simulirajte napako na eni izmed mikrostoritev in opazujte delovanje aplikacije.
 
@@ -128,9 +128,9 @@ Zasnova in implementacija odkrivanja storitev v vaši aplikaciji.
 - [ ] Uporabite lahko npr. tudi Amazon Rekognition.
 
 ### Opomba: spletni in/ali mobilni vmesnik
-- [ ] Ne pozabite pripraviti preprostega uporabniškega (spletnega in/ali mobilnega) vmesnika za vašo aplikacijo.
-- [ ] Uporabniški vmesnik naj zajema nekaj preprostih zaslonov, s katerimi boste demonstrirali delovanje aplikacije (npr. nalaganje slike, pregled vseh slik uporabnika, prikaz ene slike skupaj z komentarji ...).
-- [ ] Uporabniški vmesnik naj bo preprost, poudarek naj bo na prikazu implementiranih funkcionalnosti vaše mikrostoritvene aplikacije.
+- [x] Ne pozabite pripraviti preprostega uporabniškega (spletnega in/ali mobilnega) vmesnika za vašo aplikacijo.
+- [x] Uporabniški vmesnik naj zajema nekaj preprostih zaslonov, s katerimi boste demonstrirali delovanje aplikacije (npr. nalaganje slike, pregled vseh slik uporabnika, prikaz ene slike skupaj z komentarji ...).
+- [x] Uporabniški vmesnik naj bo preprost, poudarek naj bo na prikazu implementiranih funkcionalnosti vaše mikrostoritvene aplikacije.
 
 ## Vaja 8:
 ### Sporočilni in pretočni sistemi
@@ -138,6 +138,18 @@ Zasnova in implementacija odkrivanja storitev v vaši aplikaciji.
     - [ ] V pomoč naj vam bo arhitektura aplikacije, ki smo jo zasnovali na začetku semestra.
     - [ ] S sporočili oz. dogodki lahko na primer prožite procesiranje ali analizo slik oz. zvočnih posnetkov.
 - [ ] Uporabite lahko rešitev as a service, ali pa potrebno platformo namestite sami.
+
+## Vaja 9:
+### Samodejno skaliranje
+- [ ] Vašim namestitvam ustrezno konfigurirajte samodejno skaliranje (Horizontal Pod Autoscaling).
+- [ ] Simulirajte povečano obremenitev.
+- [ ] Generirate lahko večjo količino prometa iz neke druge (za ta namen vzpostavljene) gruče Kubernetes.
+- [ ] Simulirajte promet na tri različne končne točke REST, za katere pričakujete, da bi v realni postavitvi aplikacije prejemale največ prometa.
+- [ ] Opazujte potek samodejnega skaliranja ob povečevanju in zmanjševanju obremenitve.
+- [ ] Pripravite demo, ki ga boste pokazali na zagovoru.
+
+## Napredni komunikacijski protokoli
+- [ ] V vašo mikrostoritveno aplikacijo vključite GrahpQL, gRPC ali asinhrone REST klice.
 
 
 # Zagovori projektov bodo potekali v dveh tednih:
