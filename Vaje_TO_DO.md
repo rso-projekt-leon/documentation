@@ -97,20 +97,20 @@ Zasnova in implementacija odkrivanja storitev v vaši aplikaciji.
 
 ## Vaja 6:
 ### Kubernetes in dnevniške datoteke
-- [ ] Kubernetes ponuja osnovne mehanizme za delo z dnevniki.
-- [ ] Preglejte dokumentacijo ukaza kubectl logs.
-- [ ] Izpišite dnevniške datoteke vseh podov neke namestitve (deployment).
+- [x] Kubernetes ponuja osnovne mehanizme za delo z dnevniki.
+- [x] Preglejte dokumentacijo ukaza kubectl logs.
+- [x] Izpišite dnevniške datoteke vseh podov neke namestitve (deployment).
 
 ### Implementacija centralnega beleženja dnevnikov
-- [ ] Dnevniške datoteke (logs) vaših mikrostoritev shranjujte v sistem za centralizirano beleženje dnevnikov.
-    - [ ] V vaše mikrostoritve lahko dodate orodje za beleženje dnevnikov, ki bo dnevnike pošiljalo v sistem za centralizirano beleženje dnevnikov. Uporabite lahko KumuluzEE Logs.
-    - [ ] Uporabite lahko orodja, ki na Kubernetesu berejo izpise podov in jih posredujejo v sistem za zbiranje dnevniških zapisov.
-- [ ] Uporabite lahko trial račun na logit.io.
-    - [ ] Za uporabo z Log4j2 uporabite appender tipa TCP.
-- [ ] Storitev naj vsakemu dnevniškemu zapisu doda tudi kontekstne podatke (ime storitve, verzija, okolje...). V Log4j2 lahko za ta namen implementirate interceptor. Dodajte tudi unikaten identifikator zahtevka, ki naj enolično označuje en zahtevek, ki se lahko izvede na več mikrostoritvah.
-- [ ] Vaše mikrostoritve naj beležijo vse vstope in izstope v metode posameznih končnih točk REST.
-- [ ] V orodju za pregled dnevnikov pripravite tri zanimive poizvedbe po dnevnikih (npr. izpis dnevnikov določene mikrostoritve, izpis vseh vstopov v določeno metodo, ...)
-    - [ ] Primer: marker.name: ENTRY || marker.name: EXIT
+- [x] Dnevniške datoteke (logs) vaših mikrostoritev shranjujte v sistem za centralizirano beleženje dnevnikov.
+    - [x] V vaše mikrostoritve lahko dodate orodje za beleženje dnevnikov, ki bo dnevnike pošiljalo v sistem za centralizirano beleženje dnevnikov. Uporabite lahko KumuluzEE Logs.
+    - [x] Uporabite lahko orodja, ki na Kubernetesu berejo izpise podov in jih posredujejo v sistem za zbiranje dnevniških zapisov.
+- [x] Uporabite lahko trial račun na logit.io.
+    - [x] Za uporabo z Log4j2 uporabite appender tipa TCP.
+- [x] Storitev naj vsakemu dnevniškemu zapisu doda tudi kontekstne podatke (ime storitve, verzija, okolje...). V Log4j2 lahko za ta namen implementirate interceptor. Dodajte tudi unikaten identifikator zahtevka, ki naj enolično označuje en zahtevek, ki se lahko izvede na več mikrostoritvah.
+- [x] Vaše mikrostoritve naj beležijo vse vstope in izstope v metode posameznih končnih točk REST.
+- [x] V orodju za pregled dnevnikov pripravite tri zanimive poizvedbe po dnevnikih (npr. izpis dnevnikov določene mikrostoritve, izpis vseh vstopov v določeno metodo, ...)
+    - [x] Primer: marker.name: ENTRY || marker.name: EXIT
 
 ## Vaja 7:
 ### Izolacija in toleranca napak
@@ -123,9 +123,9 @@ Zasnova in implementacija odkrivanja storitev v vaši aplikaciji.
 - [ ] Ponovno simulirajte napako na eni izmed mikrostoritev in opazujte delovanje aplikacije.
 
 ### Uporaba zunanjih (3rd party) API-jev
-- [ ] V vašo aplikacijo vključite kak zunanji API.
-- [ ] API-je lahko najdete na portalu RapidAPI.
-- [ ] Uporabite lahko npr. tudi Amazon Rekognition.
+- [x] V vašo aplikacijo vključite kak zunanji API.
+- [x] API-je lahko najdete na portalu RapidAPI.
+- [x] Uporabite lahko npr. tudi Amazon Rekognition.
 
 ### Opomba: spletni in/ali mobilni vmesnik
 - [x] Ne pozabite pripraviti preprostega uporabniškega (spletnega in/ali mobilnega) vmesnika za vašo aplikacijo.
